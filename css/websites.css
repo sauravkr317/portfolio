@@ -17,12 +17,27 @@ p{
 	font-size: 1.2rem;
 	line-height: 1.6rem;
 }
-
 /* ......navbar........ */
+nav{
+	padding: 0px!important;
+}
+
+nav div{
+	padding: 10px 0px;
+	transition: all 0.3s ease;
+}
+
+nav div.sticky{
+	padding: 0px 0px;
+}
 .header{
 	width: 100%;
 	position: relative;
 	height: 100vh;
+}
+
+.fa-cog{
+	font-size: 25px!important;
 }
 
 
@@ -101,6 +116,34 @@ p{
 	margin-top: 15px;
 	margin-bottom: 40px;
 	
+}
+
+.cursor{
+	display: inline-block;
+	width: 2px;
+	background-color: #fff;
+	margin-left: 0.1rem;
+	animation: blink 1s infinite;
+}
+
+@keyframes blink{
+	49%{
+		background-color: #fff;
+	}
+	50%{
+		background-color: transparent;
+	}
+	99%{
+		background-color: transparent;
+	}
+	100%{
+		background-color: #fff;
+	}
+
+}
+
+.cursor.typing{
+	animation: none;
 }
 
 .center{
